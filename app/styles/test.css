@@ -1,0 +1,29 @@
+#progressbar, #indicateur {
+  border-radius: 5px;
+}
+
+#progressbar {
+  width: 300px;
+  height: 10px;
+  margin: auto;
+  padding: 1px;
+  border: solid 1px #ccc;
+}
+
+#indicateur {
+  width:0px;
+  height: 6px;
+  margin:0;
+  background-color: green;
+}
+
+#propose-wrapper span {
+  display: block;
+}
+#propose input {
+  padding-right: 6px;
+}
+
+#propose span {
+  display: inline-block;
+}

@@ -1,10 +1,10 @@
-<div ng-controller="MainCtrl as my">
+<div ng-controller="MainCtrl as my" class="text-center">
   <div>
     <h1>Angular DrunkTest</h1>
     <h3>Es-tu en état de conduire ?</h3>
   </div>
 
-  <div>
+  <div id="warning">
     <p>
       Tu sors d'une soirée un peu arrosée et c'est le moment de prendre la voiture. Mais tu n'est pas sûr de savvoir si tu es en état de conduire.
     </p>
@@ -22,12 +22,12 @@
       Le conducteur reste le seul responsable en cas d'accident lié à la consommation Abusive d'alcool.
     </p>
 
-  <span>
+  <span id="legal">
     <input id="go" type="checkbox" ng-model="my.start.value">
-    <p>{{my.start.value}} J'ai bien comris que ce test n'est pas officiel et que je suis le seul garant de ma sécurité et de celle des autres.</p>
+    <p>J'ai bien comris que ce test n'est pas officiel et que je suis le seul garant de ma sécurité et de celle des autres.</p>
   </span>
 
-    <a ng-href="#/test" class="btn btn-primary">OK ! C'est partie</a>
+    <a ng-href="#/test" class="btn btn-primary" ng-show="my.start.value">OK ! C'est partie</a>
   </div>
 </div>
 

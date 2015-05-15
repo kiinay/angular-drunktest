@@ -30,6 +30,15 @@ body {
   padding-bottom: 19px;
 }
 
+#warning, #question-wrapper {
+  margin-bottom: 30px;
+}
+
+#legal {
+  color: red;
+  display: flex;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;

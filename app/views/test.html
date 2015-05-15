@@ -1,1 +1,18 @@
-<h1>Je suis le questionnaire !</h1>
+<div id="question-wrapper" class="text-center" ng-controller="TestCtrl as test">
+  <div id="progressbar">
+    <div id="indicateur"></div>
+  </div>
+
+  <form ng-repeat="q in test.listeQuestions">
+    <h3>{{q.question}}</h3>
+
+    <div id="propose-wrapper">
+      <span id="propose" ng-repeat="p in q.propose">
+        <input type="radio" name="propose">
+        <span>{{p}}</span>
+      </span>
+    </div>
+
+    <a ng-href="#/test" class="btn btn-primary" ng-show="">Question suivante</a>
+  </form>
+</div>
